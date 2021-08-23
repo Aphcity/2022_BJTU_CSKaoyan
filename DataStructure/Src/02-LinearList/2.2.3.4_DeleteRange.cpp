@@ -1,0 +1,114 @@
+/*
+
+        CopyRight By Aphcity
+        2021年8月22日
+
+*/
+
+#include <stdio.h>
+
+#define MaxSize 10
+
+typedef struct SqList
+{
+    int data[MaxSize];
+    int length;
+} SqList;
+
+bool InitList(SqList &L);
+bool InsertList(SqList &L, int t);
+bool DeleteList(SqList &L, int &t);
+int LocateElem(SqList &L, int t);
+bool PrintList(SqList L);
+
+bool InitList(SqList &L)
+{
+    L.length = 0;
+    return true;
+}
+
+bool InsertList(SqList &L, int t)
+{
+    if (L.length == MaxSize)
+        return false;
+    L.data[L.length++] = t;
+    return true;
+}
+
+bool DeleteList(SqList &L, int pos, int t)
+{
+    if (L.length == 0)
+        return false;
+    t = L.data[--pos];
+    while (pos < L.length)
+        L.data[pos++] = L.data[pos + 1];
+    L.length--;
+    return true;
+}
+
+int LocateElem(SqList L, int t)
+{
+    if (L.length == 0)
+        return -1;
+    for (int i = 0; i < L.length; i++)
+        if (L.data[i] == t)
+            return i;
+    return -1;
+}
+
+bool PrintList(SqList L)
+{
+    for (int i = 0; i < L.length; i++)
+        printf("L[%d] = %d\n", i, L.data[i]);
+    return true;
+}
+
+/* 
+
+        删除表中给定区间的元素的算法
+
+ */
+
+bool DeleteRange(SqList &L, int s, int t)
+{
+    if (L.length == 0 || s >= t)
+    {
+        printf("ERROR!\n");
+        return false;
+    }
+
+    int temp = 0;
+    for (int i = 0; i < L.length; i++)
+    {
+        while (L.data[i] >= s && L.data[i] <= t)
+            DeleteList(L, i + 1, temp);
+    }
+    return true;
+}
+
+/* 
+
+        主函数功能测试模块
+
+ */
+
+int main()
+{
+    SqList L;
+    InitList(L);
+    int temp;
+    for (int i = 0; i < 8; i++)
+        InsertList(L, i);
+
+    PrintList(L);
+    printf("\n");
+
+    // DeleteList(L, 4, temp);
+    // PrintList(L);
+    // printf("\n");
+
+    DeleteRange(L, 3, 5);
+    PrintList(L);
+    printf("\n");
+    return 0;
+}
