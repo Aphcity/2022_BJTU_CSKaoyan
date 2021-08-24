@@ -77,7 +77,7 @@ bool ReverseRange(SqList &L, int leftLimit, int rightLimit)
     int temp = 0;
     for (int i = 0; i < (rightLimit - leftLimit + 1) / 2; i++)
     {
-        temp = L.data[i+leftLimit];
+        temp = L.data[i + leftLimit];
         L.data[i + leftLimit] = L.data[rightLimit - 1 - i];
         L.data[rightLimit - 1 - i] = temp;
     }

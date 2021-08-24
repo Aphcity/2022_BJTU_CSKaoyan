@@ -70,7 +70,7 @@ bool PrintList(SqList L)
 
 /* 
 
-        空间复杂度 为 O(1) 的逆置表算法
+        合并有序表算法
 
  */
 

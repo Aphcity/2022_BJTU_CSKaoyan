@@ -70,7 +70,7 @@ bool PrintList(SqList L)
 
 /* 
 
-        交换A内两表算法
+        折半查找并与后置元素交换算法
 
  */
 
@@ -128,7 +128,7 @@ int main()
     InitList(L);
     int temp;
     for (int i = 0; i < 8; i++)
-        InsertList(L, i+1, i);
+        InsertList(L, i + 1, i);
 
     PrintList(L);
     printf("\n");
