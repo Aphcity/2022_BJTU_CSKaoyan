@@ -1,1 +1,7 @@
 remote_theme: andrewhwanpark/dark-poole
+
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
