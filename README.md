@@ -1,4 +1,4 @@
-![BJU_LOGO](https://i.loli.net/2021/08/24/7XKuyBaholGFpZJ.png)
+![BJTU_logo](https://i.loli.net/2021/09/09/aZfBuYvOyP8Wpht.png#pic_center)
 
 # 2022北京交通大学计算机专业基础考研
 
@@ -16,44 +16,44 @@
 
 ## 计算机专业基础 涵盖科目
 
-### [925-数据结构](DataStructure)
+### [925-数据结构](.\DataStructure)
 
 `DataStructure`文件夹下为 2022 [王道考研](http://cskaoyan.com/forum.php) 数据结构课程及课后习题的源代码
 
-#### [数据结构-源码](DataStructure/Src)
+#### [数据结构-源码](.\DataStructure/Src)
 
 北交计算机考研中 925-数据结构一门稍有实践性，故此动手写下所有数据结构源码，以章节分类整理，以供大家参考～
 
 ##### 源码目录
 
-* [第一章——绪论](DataStructure/Src/DS_0_Introduction)
-* [第二章——线性表](DataStructure/Src/DS_1_LinearList)
-* [第三章——栈与队列](DataStructure/Src/DS_2_StackAndQueue)
-* [第四章——串](DataStructure/Src/DS_3_String)
-* [第五章——树与二叉树](DataStructure/Src/DS_4_TreeAndBinaryTree)
-* [第六章——图](DataStructure/Src/DS_5_Graph)
-* [第七章——查找](DataStructure/Src/DS_6_Search)
-* [第八章——排序](DataStructure/Src/DS_7_Sort)
+* [第一章——绪论](.\DataStructure/Src/DS_0_Introduction)
+* [第二章——线性表](.\DataStructure/Src/DS_1_LinearList)
+* [第三章——栈与队列](.\DataStructure/Src/DS_2_StackAndQueue)
+* [第四章——串](.\DataStructure/Src/DS_3_String)
+* [第五章——树与二叉树](.\DataStructure/Src/DS_4_TreeAndBinaryTree)
+* [第六章——图](.\DataStructure/Src/DS_5_Graph)
+* [第七章——查找](.\DataStructure/Src/DS_6_Search)
+* [第八章——排序](.\DataStructure/Src/DS_7_Sort)
 
 ##### 编程语言
 
 虽然都是.cpp文件，但其中的语法既有C++的语法也有部分C的语法
 
-#### [数据结构-PPT](DataStructure/PPT)
+#### [数据结构-PPT](.\DataStructure/PPT)
 
 `DataStructure/PPT` 文件夹下存放的是 2021 年王道考研**数据结构**视频课程的 PPT，以供大家快速查找知识点或着复习视频内容！
 
 > 确实是没有找到最新的2022年的PPT
 
-### [操作系统](OperatingSystem)
+### [操作系统](.\OperatingSystem)
 
-#### [操作系统-思维导图](OperatingSystem/MindMap/)
+#### [操作系统-思维导图](.\OperatingSystem/MindMap/)
 
-+ [操作系统-王道书籍上的思维导图](OperatingSystem/MindMap/BookMindMap)
-+ [操作系统-视频教程PPT中的思维导图](OperatingSystem/MindMap/PPTMindMap)
-+ [操作系统-王道论坛VIP学员独享的思维导图](OperatingSystem/MindMap/CSKaoYanVIPMindMap)
++ [操作系统-王道书籍上的思维导图](.\OperatingSystem/MindMap/BookMindMap)
++ [操作系统-视频教程PPT中的思维导图](.\OperatingSystem/MindMap/PPTMindMap)
++ [操作系统-王道论坛VIP学员独享的思维导图](.\OperatingSystem/MindMap/CSKaoYanVIPMindMap)
 
-#### [操作系统-PPT](OperatingSystem/PPT)
+#### [操作系统-PPT](.\OperatingSystem/PPT)
 
 `OperatingSystem/PPT` 文件夹下存放的是 2021 年王道考研**操作系统**视频课程的 PPT，以供大家快速查找知识点或着复习视频内容！
 
