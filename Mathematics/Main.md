@@ -11,10 +11,6 @@ $$
 ## 三角函数
 
 $$
-\sec \alpha = \frac { 1 } { \cos \alpha }
-$$
-
-$$
 1 + \tan ^ { 2 } \alpha = \sec ^ { 2 } \alpha
 $$
 
@@ -42,113 +38,49 @@ $$
 \end{aligned}
 $$
 
-## Taylor 公式
-
-$$
-\begin{aligned}
-
-\sin x &=\sum_{n=0}^{\infty}(-1)^{n} \frac{x^{2 n+1}}{(2 n+1) !} \\[1ex]
-&=x-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\frac{x^{7}}{7 !}+\cdots+(-1)^{n} \frac{x^{2 n+1}}{(2 n+1) !}+\cdots,-\infty<x<+\infty \text { . }
-
-\\[1ex]
-
-\cos x &=\sum_{n=0}^{\infty}(-1)^{n} \frac{x^{2 n}}{(2 n) !} \\[1ex]
-&=1-\frac{x^{2}}{2 !}+\frac{x^{4}}{4 !}-\frac{x^{6}}{6 !}+\cdots+(-1)^{n} \frac{x^{2 n}}{(2 n) !}+\cdots,-\infty<x<+\infty \text { . }
-
-\\[1ex]
-
-\ln (1+x)&=\sum_{n=1}^{\infty}(-1)^{n-1} \frac{x^{n}}{n}\\[1ex]
-&=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\cdots+(-1)^{n-1} \frac{x^{n}}{n}+\cdots,-1<x \leqslant 1 \text { . }
-
-\\[1ex]
-
-\mathrm{e}^{x}&=\sum_{n=0}^{\infty} \frac{x^{n}}{n !}\\[1ex]
-&=1+x+\frac{x^{2}}{2 !}+\cdots+\frac{x^{n}}{n !}+\cdots,-\infty<x<+\infty \text { . }
-
-\\[1ex]
-
-a^{x}&=\sum_{n=0}^{\infty} \frac{(x\ln a)^{n}}{n !}\\[1ex]
-&=1+(x\ln a)+\frac{(x\ln a)^{2}}{2 !}+\cdots+\frac{(x\ln a)^{n}}{n !}+\cdots,-\infty<x<+\infty \text { . }
-
-\\[1ex]
-
-\frac{1}{1+x}&=\sum_{n=0}^{\infty}(-1)^{n} x^{n}\\[1ex]
-&=1-x+x^{2}-x^{3}+\cdots+(-1)^{n} x^{n}+\cdots,-1<x<1 \text { . }
-
-\\[1ex]
-
-\frac{1}{1-x}&=\sum_{n=0}^{\infty} x^{n}\\[1ex]
-&=1+x+x^{2}+\cdots+x^{n}+\cdots,-1<x<1 \text { . }
-
-\\[1ex]
-
-(1+x)^{\sigma}&=1+\alpha x+\frac{\alpha(\alpha-1)}{2 !} x^{2}+\cdots+\frac{\alpha(\alpha-1) \cdots(\alpha-n+1)}{n !} x^{n}+\cdots,
-&\left\{
-    \begin{array}{ll}
-    x \in(-1,1) & \text { 当 } \alpha \leqslant-1 \text { , } \\[1ex]
-    x \in(-1,1] & \text { 当 }-1<\alpha<0 \text { , } \\[1ex]
-    x \in[-1,1] & \text { 当 } \alpha>0 \text { . }
-    \end{array}
-    \right.
-
-\end{aligned}
-$$
-
 ## 常用导数
 
 $$
 \begin{aligned}
 
-(\tan x)^{\prime}&=\sec ^{2} x
+(\tan x)^{\prime}=\sec ^{2} x
+\qquad&;\quad
+(\cot x)^{\prime}=-\csc ^{2} x
 \\[1ex]
-(\cot x)^{\prime}&=-\csc ^{2} x
+(\sec x)^{\prime}=\sec x \tan x
+\quad&;\quad
+(\csc x)^{\prime}=-\csc x \cot x
 \\[1ex]
-(\sec x)^{\prime}&=\sec x \tan x
+(\arcsin x)^{\prime}=\frac{1}{\sqrt{1-x^{2}}}
+\quad&;\quad
+(\arccos x)^{\prime}=-\frac{1}{\sqrt{1-x^{2}}}
 \\[1ex]
-(\csc x)^{\prime}&=-\csc x \cot x
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-(\arcsin x)^{\prime}&=\frac{1}{\sqrt{1-x^{2}}}
+(\arctan x)^{\prime}=\frac{1}{1+x^{2}}
+\quad&;\quad
+(\arccot x)^{\prime}=-\frac{1}{1+x^{2}}
 \\[1ex]
-(\arccos x)^{\prime}&=-\frac{1}{\sqrt{1-x^{2}}}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-(\arctan x)^{\prime}&=\frac{1}{1+x^{2}}
+\left[\ln \left(x+\sqrt{x^{2}+1}\right)\right]^{\prime}\quad&=\quad\frac{1}{\sqrt{x^{2}+1}}
 \\[1ex]
-(\operatorname{arccot} x)^{\prime}&=-\frac{1}{1+x^{2}}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-\left[\ln \left(x+\sqrt{x^{2}+1}\right)\right]^{\prime}&=\frac{1}{\sqrt{x^{2}+1}}
-\\[1ex]
-\quad\left[\ln \left(x+\sqrt{x^{2}-1}\right)\right]^{\prime}&=\frac{1}{\sqrt{x^{2}-1}}
+\quad\left[\ln \left(x+\sqrt{x^{2}-1}\right)\right]^{\prime}\quad&=\quad\frac{1}{\sqrt{x^{2}-1}}
 \end{aligned}
 $$
 
 ## 反函数的导数
 
 $$
-y*{x}^{\prime}
+y_{x}^{\prime}
 =\frac{\mathrm{d} y}{\mathrm{~d} x}
 =\frac{1}{\frac{\mathrm{d} x}{\mathrm{~d} y}}
-=\frac{1}{x*{y}^{\prime}}
-$$
+=\frac{1}{x_{y}^{\prime}}
 
-$$
-y*{x x}^{\prime \prime}
+\\[1ex]
+
+y_{x x}^{\prime \prime}
 =\frac{\mathrm{d}^{2} y}{\mathrm{~d} x^{2}}
 =\frac{\mathrm{d}\left(\frac{\mathrm{d} y}{\mathrm{~d} x}\right)}{\mathrm{d} x}
-=\frac{\mathrm{d}\left(\frac{1}{x*{y}^{\prime}}\right)}{\mathrm{d} y} \cdot \frac{\mathrm{d} y}{\mathrm{~d} x}
-=\frac{\mathrm{d}\left(\frac{1}{x*{y}^{\prime}}\right)}{\mathrm{d} y} \cdot \frac{1}{x*{y}^{\prime}}
-=\frac{-x*{y y}^{\prime \prime}}{\left(x*{y}^{\prime}\right)^{3}}
+=\frac{\mathrm{d}\left(\frac{1}{x_{y}^{\prime}}\right)}{\mathrm{d} y} \cdot \frac{\mathrm{d} y}{\mathrm{~d} x}
+=\frac{\mathrm{d}\left(\frac{1}{x_{y}^{\prime}}\right)}{\mathrm{d} y} \cdot \frac{1}{x_{y}^{\prime}}
+=\frac{-x_{y y}^{\prime \prime}}{\left(x_{y}^{\prime}\right)^{3}}
 $$
 
 ## 变限积分求导
@@ -159,9 +91,29 @@ $$
     F^{\prime}(x)
         &=\frac{\mathrm{d}}{\mathrm{d} x}\left[\int_{\varphi_{1}(x)}^{\varphi_{2}(x)} f(t) \mathrm{d} t\right]
         \\[2ex]
-        &=f\left[\varphi_{2}(x)\right] \varphi*{2}^{\prime}(x)-f\left[\varphi*{1}(x)\right] \varphi\_{1}^{\prime}(x)
+        &=f\left[\varphi_{2}(x)\right] \varphi_{2}^{\prime}(x)-f\left[\varphi_{1}(x)\right] \varphi_{1}^{\prime}(x)
 
 \end{aligned}
+$$
+
+## 曲率
+
+$$
+k=\frac{\left|y^{\prime \prime}\right|}{\left[1+\left(y^{\prime}\right)^{2}\right]^{\frac{3}{2}}}
+
+\\[1ex]
+
+R=\frac{1}{k}=\frac{\left[1+\left(y^{\prime}\right)^{2}\right]^{\frac{3}{2}}}{\left|y^{\prime \prime}\right|}
+
+\\[1ex]
+
+\left\{\begin{array}{l}
+x_{0}=x-\frac{y^{\prime}\left(1+\left(y^{\prime}\right)^{2}\right)}{y^{\prime \prime}} 
+
+\\[1ex]
+
+y_{0}=y+\frac{1+\left(y^{\prime}\right)^{2}}{y^{\prime \prime}}
+\end{array}\right.
 $$
 
 ## N 阶导数公式
@@ -172,6 +124,10 @@ $$
     \\[1ex]
     \left(a^{x}\right)^{(n)}&=a^{x}(\ln a)^{n}(a>0, a \neq 1)
     \\[1ex]
+    \left(\frac{1}{1-x}\right)^{(n)}&=\frac{n !}{(1-x)^{n+1}}
+    \\[1ex]
+	\left(\frac{1}{1+x}\right)^{(n)}&=\frac{(-1)^{n} n !}{(1-x)^{n+1}}
+	\\[1ex]
     (\sin k x)^{(n)}&=k^{n} \sin \left(k x+n \cdot \frac{\pi}{2}\right)
     \\[1ex]
     (\cos k x)^{(n)}&=k^{n} \cos \left(k x+n \cdot \frac{\pi}{2}\right)
@@ -183,6 +139,56 @@ $$
     \left[\left(x+x_{0}\right)^{m}\right]^{(n)}&=m(m-1)(m-2) \cdots(m-n+1)\left(x+x_{0}\right)^{m-n}
     \\[1ex]
     \left(\frac{1}{x+a}\right)^{(n)}&=\frac{(-1)^{n} n !}{(x+a)^{n+1}}
+
+\end{aligned}
+$$
+
+## Taylor 公式（简单无穷小展开）
+
+$$
+\begin{aligned}
+
+\mathrm { e } ^ { x } &= 1 + x + \frac { x ^ { 2 } } { 2 ! } + o ( x ^ 2 )
+
+\\[1ex]
+
+\sin x &= x - \frac { x ^ { 3 } } { 3 ! } + \frac { x ^ { 5 } } { 5 ! } + o ( x ^ 5 )
+
+\\[1ex]
+
+\cos x &= 1 - \frac { x ^ { 2 } } { 2 ! } + \frac { x ^ { 4 } } { 4 ! } + o ( x ^ 4 )
+
+\\[1ex]
+
+\tan x &= x + \frac { x ^ { 3 } } { 3 } + o ( x ^ 3 )
+
+\\[1ex]
+
+\arcsin x &= x + \frac { x ^ { 3 } } { 6 } + o ( x ^ 3 )
+
+\\[1ex]
+
+\arctan x &= x - \frac { x ^ { 3 } } { 3 } + o ( x ^ 3 )
+
+\\[1ex]
+
+\ln ( 1 + x ) &= x - \frac { x ^ { 2 } } { 2 } + \frac { x ^ { 3 } } { 3 } + o ( x ^ 3 )
+
+\\[1ex]
+
+a ^ { x } &= 1 + ( x \ln a ) + \frac { ( x \ln a ) ^ { 2 } } { 2 ! } + o ( x ^ 2 )
+
+\\[1ex]
+
+\frac { 1 } { 1 - x } &= 1 + x + x ^ { 2 } + x ^ { 3 } + o ( x ^ 3 )
+
+\\[1ex]
+
+\frac { 1 } { 1 + x } &= 1 - x + x ^ { 2 } - x ^ { 3 } + o ( x ^ 3 )
+
+\\[1ex]
+
+( 1 + x ) ^ { \alpha } &= 1 + \alpha x + \frac { \alpha ( \alpha - 1 ) } { 2 ! } x ^ { 2 } + o ( x ^ 2 )
 
 \end{aligned}
 $$
@@ -217,6 +223,70 @@ $$
     x-\sin x &\sim \frac{x^{3}}{6}
     \\[1ex]
     \arcsin x-x &\sim \frac{x^{3}}{6}
+
+\end{aligned}
+$$
+
+## Taylor 公 式（完全展开）
+
+$$
+\begin{aligned}
+
+\mathrm{e}^{x}&=\sum_{n=0}^{\infty} \frac{x^{n}}{n !}\\[1ex]
+&=1+x+\frac{x^{2}}{2 !}+\cdots+\frac{x^{n}}{n !}+\cdots,-\infty<x<+\infty \text { . }
+
+\\[1ex]
+
+\sin x &=\sum_{n=0}^{\infty}(-1)^{n} \frac{x^{2 n+1}}{(2 n+1) !} \\[1ex]
+&=x-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\frac{x^{7}}{7 !}+\cdots+(-1)^{n} \frac{x^{2 n+1}}{(2 n+1) !}+\cdots,-\infty<x<+\infty \text { . }
+
+\\[1ex]
+
+\cos x &=\sum_{n=0}^{\infty}(-1)^{n} \frac{x^{2 n}}{(2 n) !} \\[1ex]
+&=1-\frac{x^{2}}{2 !}+\frac{x^{4}}{4 !}-\frac{x^{6}}{6 !}+\cdots+(-1)^{n} \frac{x^{2 n}}{(2 n) !}+\cdots,-\infty<x<+\infty \text { . }
+
+\\[1ex]
+
+\tan x &= x + \frac{x^{3}}{3}+o(x^3)
+
+\\[1ex]
+
+\arcsin x &= x + \frac{x^{3}}{6}+o(x^3)
+
+\\[1ex]
+
+\arctan x &= x - \frac{x^{3}}{3}+o(x^3)
+
+\\[1ex]
+
+\ln (1+x)&=\sum_{n=1}^{\infty}(-1)^{n-1} \frac{x^{n}}{n}\\[1ex]
+&=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\cdots+(-1)^{n-1} \frac{x^{n}}{n}+\cdots,-1<x \leqslant 1 \text { . }
+
+\\[1ex]
+
+a^{x}&=\sum_{n=0}^{\infty} \frac{(x\ln a)^{n}}{n !}\\[1ex]
+&=1+(x\ln a)+\frac{(x\ln a)^{2}}{2 !}+\cdots+\frac{(x\ln a)^{n}}{n !}+\cdots,-\infty<x<+\infty \text { . }
+
+\\[1ex]
+
+\frac{1}{1-x}&=\sum_{n=0}^{\infty} x^{n}\\[1ex]
+&=1+x+x^{2}+\cdots+x^{n}+\cdots,-1<x<1 \text { . }
+
+\\[1ex]
+
+\frac{1}{1+x}&=\sum_{n=0}^{\infty}(-1)^{n} x^{n}\\[1ex]
+&=1-x+x^{2}-x^{3}+\cdots+(-1)^{n} x^{n}+\cdots,-1<x<1 \text { . }
+
+\\[1ex]
+
+(1+x)^{\sigma}&=1+\alpha x+\frac{\alpha(\alpha-1)}{2 !} x^{2}+\cdots+\frac{\alpha(\alpha-1) \cdots(\alpha-n+1)}{n !} x^{n}+\cdots,
+&\left\{
+    \begin{array}{ll}
+    x \in(-1,1) & \text { 当 } \alpha \leqslant-1 \text { , } \\[1ex]
+    x \in(-1,1] & \text { 当 }-1<\alpha<0 \text { , } \\[1ex]
+    x \in[-1,1] & \text { 当 } \alpha>0 \text { . }
+    \end{array}
+    \right.
 
 \end{aligned}
 $$
