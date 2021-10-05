@@ -138,6 +138,47 @@ bool Reverse_PrePointer(LinkList &L)
 
 /* 
 
+        一次遍历找到中位数
+
+ */
+
+int MidNum_LinkList(LinkList L)
+{
+    if (IsEmptyLinkList(L))
+        return -1;
+    LNode *Rear = L->next, *Front = L;
+    while (Rear != NULL && Rear->next != NULL)
+    {
+        Front = Front->next;
+        Rear = (Rear->next)->next;
+    }
+    return Front->data;
+}
+
+/* 
+
+        一次遍历找到倒数第k个元素
+
+ */
+
+int LastKNum_LinkList(LinkList L, int k)
+{
+    if (IsEmptyLinkList(L))
+        return -1;
+    LNode *Rear = L->next, *Front = L->next;
+    for (int i = 0; i < k; i++)
+        Rear = Rear->next;
+
+    while (Rear != NULL)
+    {
+        Front = Front->next;
+        Rear = Rear->next;
+    }
+    return Front->data;
+}
+
+/* 
+
         主函数测试部分
 
  */
@@ -150,14 +191,20 @@ int main()
     Init_LinkList(L);
     for (int i = 0; i < 5; i++)
         HeadInsert_LinkList(L, i);
-    for (int i = 5; i < 10; i++)
+    for (int i = 5; i < 9; i++)
         TailInsert_LinkList(L, i);
     Print_LinkList(L);
-
+    /* 
     Reverse_HeadInsert(L);
     Print_LinkList(L);
 
     Reverse_PrePointer(L);
     Print_LinkList(L);
+ */
+    printf("\nMid is %d\n", MidNum_LinkList(L));
+
+    int k = 4;
+    printf("\nLast %dth is %d\n", k, LastKNum_LinkList(L, k));
+
     return 0;
 }
