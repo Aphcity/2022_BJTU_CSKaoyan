@@ -103,7 +103,7 @@ bool Reverse_HeadInsert(LinkList &L)
     }
     HeadInsert_LinkList(L, OriginList->data);
 
- */
+    */
 
     while (Origin != NULL)
     {
