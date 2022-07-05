@@ -8,7 +8,7 @@
 
 ## 栈和队列
 
-数制转换（代码填空题）
+✅[数制转换](..\Src\KEY\DecimalConversion.cpp)（代码填空题）
 
 ✅ [循环队列判空判满](..\Src\KEY\SeqQueue.cpp)（填空选择）
 
@@ -26,14 +26,14 @@
 
 ✅ [图的遍历（ BFS & DFS ）](..\Src\KEY\GraphSearch.cpp)（ 算法说明 )
 
-⏺️ [Prim 算法](..\Src\KEY\MiniSpanTree_Prim.cpp)（算法设计）
+⏺️ [Prim 算法（邻接矩阵）](..\Src\KEY\MiniSpanTree_Prim.cpp)（算法设计）
 
 ## 排序
 
 ✅[插入排序](../Src/KEY/InsertSort.cpp)（算法填空）
 
-希尔排序（算法填空）
+✅[希尔排序](../Src/KEY/ShellSort.cpp)（算法填空）
 
 ✅[快速排序](../Src/KEY/QuickSort.cpp)（算法设计）
 
-堆排序（算法设计）
+✅[堆排序](../Src/KEY/HeapSort.cpp)（算法设计）
